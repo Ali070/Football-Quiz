@@ -34,5 +34,13 @@
         <argument
             android:name="name"
             app:argType="string" />
+        <action
+            android:id="@+id/action_levelsFragment_to_questionsFragment"
+            app:destination="@id/questionsFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/questionsFragment"
+        android:name="com.alisamir.footballquiz.ui.QuestionsFragment"
+        android:label="fragment_questions"
+        tools:layout="@layout/fragment_questions" />
 </navigation>

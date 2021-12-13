@@ -5,4 +5,7 @@
     <string name="football">Football</string>
     <string name="quiz">Quiz</string>
     <string name="enter_your_name">Enter your name</string>
+    <string name="title">Title</string>
+    <string name="name">Name</string>
+    <string name="score">Score</string>
 </resources>

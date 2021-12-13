@@ -7,10 +7,14 @@
         <entry key="..\:/Android/Projects/FootballQuiz/app/src/main/res/drawable/ic_baseline_arrow_forward_24.xml" value="0.23055555555555557" />
         <entry key="..\:/Android/Projects/FootballQuiz/app/src/main/res/drawable/ic_wave_design.xml" value="0.23055555555555557" />
         <entry key="..\:/Android/Projects/FootballQuiz/app/src/main/res/drawable/naem_back.xml" value="0.8892857142857142" />
+        <entry key="..\:/Android/Projects/FootballQuiz/app/src/main/res/drawable/person.xml" value="0.22592592592592592" />
         <entry key="..\:/Android/Projects/FootballQuiz/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
         <entry key="..\:/Android/Projects/FootballQuiz/app/src/main/res/layout/fragment_levels.xml" value="0.13020833333333334" />
         <entry key="..\:/Android/Projects/FootballQuiz/app/src/main/res/layout/fragment_person_details.xml" value="0.2" />
         <entry key="..\:/Android/Projects/FootballQuiz/app/src/main/res/layout/fragment_splash.xml" value="0.1793478260869565" />
+        <entry key="..\:/Android/Projects/FootballQuiz/app/src/main/res/layout/levels_item.xml" value="0.2" />
+        <entry key="..\:/Android/Projects/FootballQuiz/app/src/main/res/layout/nav_header.xml" value="0.2" />
+        <entry key="..\:/Android/Projects/FootballQuiz/app/src/main/res/menu/nav_menu.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

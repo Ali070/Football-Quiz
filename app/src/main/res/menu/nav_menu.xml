@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/questionsFragment"
+            android:title="@string/score"
+            />
+        <item android:id="@+id/score2"
+            android:title="Score" />
+        <item android:id="@+id/score3"
+            android:title="Score" />
+    </group>
+    <item android:title="Others">
+        <menu>
+            <item android:title="setings"/>
+            <item android:title="setings"/>
+        </menu>
+    </item>
+</menu>
