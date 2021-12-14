@@ -24,23 +24,31 @@
         <action
             android:id="@+id/action_personDetailsFragment2_to_levelsFragment"
             app:destination="@id/levelsFragment"
-            app:popUpTo="@id/splashFragment" />
+            app:popUpTo="@id/personDetailsFragment2" />
     </fragment>
     <fragment
         android:id="@+id/levelsFragment"
         android:name="com.alisamir.footballquiz.ui.LevelsFragment"
         android:label="fragment_levels"
         tools:layout="@layout/fragment_levels" >
+        <action
+            android:id="@+id/action_levelsFragment_to_questionsFragment3"
+            app:destination="@id/questionsFragment3"
+            />
         <argument
             android:name="name"
             app:argType="string" />
-        <action
-            android:id="@+id/action_levelsFragment_to_questionsFragment"
-            app:destination="@id/questionsFragment" />
     </fragment>
     <fragment
-        android:id="@+id/questionsFragment"
+        android:id="@+id/questionsFragment3"
         android:name="com.alisamir.footballquiz.ui.QuestionsFragment"
         android:label="fragment_questions"
-        tools:layout="@layout/fragment_questions" />
+        tools:layout="@layout/fragment_questions" >
+        <argument
+            android:name="level"
+            app:argType="integer" />
+        <argument
+            android:name="questions"
+            app:argType="integer" />
+    </fragment>
 </navigation>

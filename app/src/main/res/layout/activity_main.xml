@@ -17,7 +17,7 @@
             android:id="@+id/toolbar"
             style="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
+            android:layout_height="?actionBarSize"
             android:background="@color/gold"
             android:elevation="4dp"
             app:titleTextColor="@color/black"
@@ -36,9 +36,10 @@
             app:navGraph="@navigation/nav_graph" />
     </LinearLayout>
     <com.google.android.material.navigation.NavigationView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity = "start"
+        android:fitsSystemWindows="true"
         app:menu="@menu/nav_menu"
         app:headerLayout="@layout/nav_header"
         android:id="@+id/drawer"

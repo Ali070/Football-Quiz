@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+
+    <RadioGroup
+        android:id="@+id/numberOfQuesionsGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/quesions_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_back"
+            android:button="@android:color/transparent"
+            android:checked="true"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:text="@string/_5"
+            android:textColor="@color/back_end"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/quesions_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_back"
+            android:button="@android:color/transparent"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:text="@string/_10"
+            android:textColor="@color/back_end"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/quesions_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_back"
+            android:button="@android:color/transparent"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:text="@string/_15"
+            android:textColor="@color/back_end"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/startbtn_back"
+        android:text="@string/start_quiz"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="@null" />
+</LinearLayout>

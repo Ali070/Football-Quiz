@@ -1,5 +1,6 @@
 package com.alisamir.footballquiz.ui
 
+import android.app.Activity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,6 +9,7 @@ import android.view.ViewGroup
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatActivity
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.fragment.findNavController
 import com.alisamir.footballquiz.R
 import com.alisamir.footballquiz.databinding.FragmentSplashBinding
@@ -21,12 +23,14 @@ class SplashFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
+        (activity as AppCompatActivity?)!!.findViewById<DrawerLayout>(R.id.drawerLayout).setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED)
         (activity as AppCompatActivity?)!!.supportActionBar?.hide()
         (activity as AppCompatActivity?)!!.window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
     }
 
     override fun onStop() {
         super.onStop()
+        (activity as AppCompatActivity?)!!.findViewById<DrawerLayout>(R.id.drawerLayout).setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED)
         (activity as AppCompatActivity?)!!.supportActionBar?.show()
         (activity as AppCompatActivity?)!!.window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LAYOUT_STABLE
     }

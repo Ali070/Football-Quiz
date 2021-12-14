@@ -84,8 +84,6 @@
                 app:backgroundTint="@color/white"
                 app:borderWidth="0dp"
                 app:fabSize="auto"
-                app:hideMotionSpec="@anim/end_anim"
-                app:showMotionSpec="@anim/start_anim"
                 app:tint="@color/gold" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>

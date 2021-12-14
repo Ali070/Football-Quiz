@@ -10,4 +10,6 @@
     <color name="gold">#ffd44d</color>
     <color name="back_start">#145DA0</color>
     <color name="back_end">#050A30</color>
+    <color name="right_answer">#32CD30</color>
+    <color name="wrong_answer">#F51720</color>
 </resources>

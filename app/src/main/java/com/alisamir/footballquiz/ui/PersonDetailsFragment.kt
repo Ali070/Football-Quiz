@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.fragment.findNavController
 import com.alisamir.footballquiz.R
 import com.alisamir.footballquiz.databinding.FragmentPersonDetailsBinding
@@ -17,11 +18,13 @@ class PersonDetailsFragment : Fragment() {
     }
     override fun onResume() {
         super.onResume()
+        (activity as AppCompatActivity?)!!.findViewById<DrawerLayout>(R.id.drawerLayout).setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED)
         (activity as AppCompatActivity?)!!.supportActionBar?.hide()
     }
 
     override fun onStop() {
         super.onStop()
+        (activity as AppCompatActivity?)!!.findViewById<DrawerLayout>(R.id.drawerLayout).setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED)
         (activity as AppCompatActivity?)!!.supportActionBar?.show()
     }
     override fun onCreateView(
