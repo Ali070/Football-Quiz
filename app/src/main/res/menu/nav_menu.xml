@@ -3,18 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
-    <group android:checkableBehavior="single">
-        <item android:id="@+id/questionsFragment3"
-            android:title="@string/score"
-            />
-
-    </group>
-    <item android:title="@string/others">
-        <menu>
-            <item android:title="@string/setings"
-                android:id="@+id/settings"/>
-            <item android:title="@string/setings"
-                android:id="@+id/about"/>
-        </menu>
-    </item>
+    <item android:title="@string/settings"
+        android:id="@+id/settings"
+        android:icon="@drawable/settings"/>
+    <item android:title="@string/info"
+        android:id="@+id/info"
+        android:icon="@drawable/info"/>
+    <item android:title="@string/share"
+        android:id="@+id/share"
+        android:icon="@drawable/share"/>
+    <item android:title="@string/rate"
+        android:id="@+id/rate"
+        android:icon="@drawable/rate"/>
 </menu>

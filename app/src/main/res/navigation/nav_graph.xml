@@ -29,12 +29,11 @@
     <fragment
         android:id="@+id/levelsFragment"
         android:name="com.alisamir.footballquiz.ui.LevelsFragment"
-        android:label="fragment_levels"
-        tools:layout="@layout/fragment_levels" >
+        android:label="Levels"
+        tools:layout="@layout/fragment_levels">
         <action
             android:id="@+id/action_levelsFragment_to_questionsFragment3"
-            app:destination="@id/questionsFragment3"
-            />
+            app:destination="@id/questionsFragment3" />
         <argument
             android:name="name"
             app:argType="string" />
@@ -49,6 +48,20 @@
             app:argType="integer" />
         <argument
             android:name="questions"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_questionsFragment3_to_resultFragment"
+            app:destination="@id/resultFragment"
+            app:popUpTo="@id/levelsFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.alisamir.footballquiz.ui.ResultFragment"
+        android:label="Score"
+        tools:layout="@layout/fragment_result">
+        <argument
+            android:name="result"
             app:argType="integer" />
     </fragment>
 </navigation>

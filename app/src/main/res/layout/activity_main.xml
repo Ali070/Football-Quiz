@@ -7,7 +7,7 @@
     tools:context=".ui.MainActivity"
     android:id="@+id/drawerLayout"
     android:fitsSystemWindows="true"
-    >
+    tools:openDrawer="start">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -41,7 +41,10 @@
         android:layout_gravity = "start"
         android:fitsSystemWindows="true"
         app:menu="@menu/nav_menu"
+        android:background="@color/back_end"
         app:headerLayout="@layout/nav_header"
         android:id="@+id/drawer"
-        />
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/white"
+        app:itemBackground="@drawable/item_back"/>
 </androidx.drawerlayout.widget.DrawerLayout>
