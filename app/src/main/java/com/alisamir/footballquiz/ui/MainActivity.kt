@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.rate->{
                     val rateIntent = Intent(Intent.ACTION_VIEW)
-                    rateIntent.data = Uri.parse("https://play.google.com/store/apps/details?id=com.twitter.android")
+                    rateIntent.data = Uri.parse("https://play.google.com/store/apps/details?id=com.alisamir.footballquiz")
                     startActivity(rateIntent)
                     binding.drawerLayout.closeDrawer(GravityCompat.START)
                 }
